@@ -75,7 +75,7 @@ export function LeadDetail() {
   }
 
   return (
-    <div className="grid gap-5">
+    <div className="grid gap-5 m-4">
       <div className="flex flex-col gap-3 rounded-lg border border-(--color-border) bg-(--color-surface) p-5 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <p className="text-sm font-semibold text-cyan-700 dark:text-cyan-300">Lead details</p>

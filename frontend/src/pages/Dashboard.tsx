@@ -102,7 +102,7 @@ export function Dashboard() {
   }
 
   return (
-    <div className="grid gap-5">
+    <div className="grid gap-5 m-4">
       <div className="flex flex-col gap-4 rounded-lg border border-(--color-border) bg-(--color-surface) p-5 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <h1 className="text-3xl font-bold text-(--color-text)">Leads</h1>
