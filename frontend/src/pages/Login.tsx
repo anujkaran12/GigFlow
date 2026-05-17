@@ -68,9 +68,6 @@ export function Login() {
         <p className="mt-1 text-sm text-(--color-text-muted)">
           Access your GigFlow dashboard.
         </p>
-        <p className="mt-3 rounded-md bg-cyan-50 px-3 py-2 text-sm text-cyan-800 dark:bg-(--color-surface-muted) dark:text-cyan-200">
-          For admin use admin@gmail.com and admin123.
-        </p>
         <div className="mt-6 grid gap-4">
           <Input
             label="Email"
