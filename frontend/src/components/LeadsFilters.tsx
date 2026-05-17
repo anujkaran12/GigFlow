@@ -14,7 +14,7 @@ interface LeadsFiltersProps {
 
 export function LeadsFilters({ filters, onChange }: LeadsFiltersProps) {
   const [searchInput, setSearchInput] = useState(filters.search)
-  const debouncedSearch = useDebounce(searchInput, 300)
+  const debouncedSearch = useDebounce(searchInput, 600)
 
   useEffect(() => {
     onChange({ search: debouncedSearch, page: 1 })
