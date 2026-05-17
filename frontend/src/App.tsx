@@ -1,6 +1,6 @@
 import { lazy, Suspense } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
-import { AppLayout } from "./components/AppLayout";
+import { Navbar } from "./components/Navbar";
 import ProtectedRouteWrapper from "./router/ProtectedRouteWrapper";
 
 import { Spinner } from "./components/Spinner";
@@ -27,6 +27,7 @@ function App() {
     <ThemeProvider>
       <ToastProvider>
         <Suspense fallback={<Spinner />}>
+            <Navbar/>
           <Routes>
             <Route path="/" element={<Navigate to="/dashboard" replace />} />
             <Route path="/login" element={<Login />} />
@@ -35,9 +36,7 @@ function App() {
               path="/dashboard"
               element={
                 <ProtectedRouteWrapper>
-                  <AppLayout>
-                    <Dashboard />
-                  </AppLayout>
+                  <Dashboard />
                 </ProtectedRouteWrapper>
               }
             />
@@ -45,9 +44,7 @@ function App() {
               path="/leads/:id"
               element={
                 <ProtectedRouteWrapper>
-                  <AppLayout>
-                    <LeadDetail />
-                  </AppLayout>
+                  <LeadDetail />
                 </ProtectedRouteWrapper>
               }
             />
