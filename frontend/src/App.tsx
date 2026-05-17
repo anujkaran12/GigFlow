@@ -51,6 +51,7 @@ function App() {
                 </ProtectedRouteWrapper>
               }
             />
+            <Route path="*" element={<Navigate to="/login" replace />} />
           </Routes>
         </Suspense>
       </ToastProvider>
